@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainscreen.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="SFF-r0-1bQ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to my App" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bua-L9-M0z">
+                                <rect key="frame" x="211" y="46" width="178" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="178" id="S4b-9y-hVv"/>
+                                    <constraint firstAttribute="height" constant="61" id="hen-ir-0CQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Use Touch ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lu-LE-jmK">
+                                <rect key="frame" x="249" y="211" width="103" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.61279633619999996" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gu-Y0-gYA" customClass="CustomButton">
+                                <rect key="frame" x="268" y="240" width="65" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="LJO-mP-zIO"/>
+                                    <constraint firstAttribute="width" constant="65" id="hrJ-Xu-PXc"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="Fingerprint.jpeg"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="touchLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gcw-9Z-UIp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SFF-r0-1bQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="3Za-NC-vL6"/>
+                            <constraint firstItem="0gu-Y0-gYA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dga-8q-ktb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SFF-r0-1bQ" secondAttribute="trailing" constant="-20" id="Ngp-tC-o4l"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SFF-r0-1bQ" secondAttribute="bottom" id="YEe-rg-UO9"/>
+                            <constraint firstItem="Bua-L9-M0z" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="26" id="jAO-QU-gda"/>
+                            <constraint firstItem="SFF-r0-1bQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="q1K-6Q-WEO"/>
+                            <constraint firstItem="2lu-LE-jmK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rBQ-3q-bVa"/>
+                            <constraint firstItem="Bua-L9-M0z" firstAttribute="centerX" secondItem="SFF-r0-1bQ" secondAttribute="centerX" id="sOT-rL-edx"/>
+                            <constraint firstItem="0gu-Y0-gYA" firstAttribute="top" secondItem="2lu-LE-jmK" secondAttribute="bottom" constant="8" id="tDI-hC-EJY"/>
+                            <constraint firstItem="0gu-Y0-gYA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vPT-Qs-Zhf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="297" y="360"/>
+        </scene>
+        <!--TouchID View Controller-->
+        <scene sceneID="N0C-J3-tj7">
+            <objects>
+                <viewController storyboardIdentifier="touch" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DzN-jR-TcX" customClass="TouchIDViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MBd-zo-a8y"/>
+                        <viewControllerLayoutGuide type="bottom" id="pia-E1-1X6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZZ2-cD-Ke5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="second.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="rSk-TC-eCG">
+                                <rect key="frame" x="20" y="20" width="560" height="560"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdX-xU-ydu">
+                                <rect key="frame" x="38" y="35" width="526" height="986"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">Touch ID:
+
+Import the library called Local Authentication
+
+When user click button or something to create event, then do something (function may be) to authenticateUsingTouchID. 
+
+Now there is something called context we need. Create a context using LAContext(). This context is responsible for doing all the things that is related to touch id  and al that we need to do to use touch ID. for example ask for user to request for touch id, to ask for authentication status and lot of other things.
+
+Display the necessary information like why you wanna use the touch id (localized reason).
+
+Not every phone has the ability to use touch id. So we need to make sure if the touch id is available. We can achieve that by using :
+	authcontext.canEvaluatePolicy(policy: LADeviceOwnerAuthenticationWithBiometrics, error);
+
+	if there is touchid available then use the touch id service
+
+	else just show the normal authentication screen
+	
+
+Again if there is touchid available then use authContext.evaluatePolicy(policy: LADeviceOwnerAuthenticationWithBiometrics, localizedReason: pass the reason and make sure to implement the reply correctly)
+
+in the reply section (bool is success, error is your error) {
+	and in this block check if it was a success
+	if (success) {
+		authentication successful.
+		Now do the necessary thing, may be display the viewcontroller with the status bar.
+		But since this is a closure, make sure to do the things in main thread that is related to 		UI.
+
+		// just for the info
+		if you want to go to particular tab, you can do sth like:
+			self.tabController?.selectedIndex = your tab index which starts from 0
+	}
+
+	but if it did not success we have to handle that case to. Do anything that you want to do 
+	if touch id evaluation was not successful, may be allow to scan second time or go to main 
+	screen, sth like that
+	Failure reasons could be:
+		Authentication failed
+		Passcode not set
+		use cancel auth
+		touch id not available
+		user tapped enter pass
+		user has not enrolled any finger with touch id
+		authentication cancelled by system
+}</string>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HmG-pV-7Fl">
+                                <rect key="frame" x="463" y="35" width="101" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="119" id="Nty-gx-j7g"/>
+                                    <constraint firstAttribute="height" constant="44" id="X0P-4E-iEd"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="boc-7w-cam"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="101" id="olZ-l4-9mm"/>
+                                </constraints>
+                                <state key="normal" title="Back" image="back.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButton:" destination="DzN-jR-TcX" eventType="touchUpInside" id="DbI-Hg-dva"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="rSk-TC-eCG" secondAttribute="trailing" constant="-20" id="DLn-zy-AF8"/>
+                            <constraint firstItem="qdX-xU-ydu" firstAttribute="top" secondItem="MBd-zo-a8y" secondAttribute="bottom" constant="15" id="L5s-Nf-n7P"/>
+                            <constraint firstItem="pia-E1-1X6" firstAttribute="top" secondItem="qdX-xU-ydu" secondAttribute="bottom" constant="37" id="Oid-ko-y0q"/>
+                            <constraint firstItem="rSk-TC-eCG" firstAttribute="top" secondItem="ZZ2-cD-Ke5" secondAttribute="topMargin" id="PvU-hE-hsH"/>
+                            <constraint firstItem="rSk-TC-eCG" firstAttribute="leading" secondItem="ZZ2-cD-Ke5" secondAttribute="leadingMargin" constant="-20" id="Rq8-IF-gGM"/>
+                            <constraint firstItem="qdX-xU-ydu" firstAttribute="leading" secondItem="ZZ2-cD-Ke5" secondAttribute="leadingMargin" constant="18" id="lfD-DN-yT9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HmG-pV-7Fl" secondAttribute="trailing" constant="16" id="nZx-1S-8TE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qdX-xU-ydu" secondAttribute="trailing" constant="16" id="rhM-ZV-8Ph"/>
+                            <constraint firstItem="pia-E1-1X6" firstAttribute="top" secondItem="rSk-TC-eCG" secondAttribute="bottom" id="sEw-OV-LbF"/>
+                            <constraint firstItem="HmG-pV-7Fl" firstAttribute="top" secondItem="MBd-zo-a8y" secondAttribute="bottom" constant="15" id="wJY-EZ-AZx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="qdX-xU-ydu" id="syC-6x-3nK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aZV-HS-wus" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="939" y="360"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Fingerprint.jpeg" width="100" height="139"/>
+        <image name="back.png" width="50" height="48"/>
+        <image name="mainscreen.jpg" width="475" height="773"/>
+        <image name="second.jpg" width="610" height="1084"/>
+    </resources>
+</document>
